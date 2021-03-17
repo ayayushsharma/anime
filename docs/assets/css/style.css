@@ -1,0 +1,118 @@
+:root {
+  --background: linear-gradient(
+    60deg,
+    rgba(33, 80, 255, 1) 0%,
+    rgba(16, 125, 236, 1) 51%,
+    rgba(0, 255, 217, 1) 100%
+  );
+  --content-pane-background: rgba(245, 245, 245, 0.1);
+  --content-pane-background-after: rgba(228, 228, 228, 0);
+  --content-section-side-margins: 20px;
+  --content-section-border-radius: 30px;
+}
+
+body {
+  background: var(--background);
+  user-select: none;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: calc(100% - 2 * var(--content-section-side-margins));
+  width: calc(100% - 2 * var(--content-section-side-margins));
+  border-radius: var(--content-section-border-radius);
+  background: var(--content-pane-background-after);
+  border: 1px solid white;
+  transition: 0.3s;
+}
+
+.content:hover {
+  border: 1px solid rgba(255, 255, 255, 0.664);
+  /*background: var(--content-pane-background-after);*/
+}
+
+.article {
+  text-align: center;
+  padding-top: 30vh;
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  font-family: "Lato", sans-serif;
+}
+
+.article h1 {
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+
+.hr {
+  color: rgba(255, 255, 255, 0);
+}
+
+.date {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  font-size: 30px;
+}
+
+.circle {
+  padding: 10px 30px;
+  border: 1px solid white;
+  margin: 5px;
+  border-radius: 200px;
+  transition: 0.3s;
+}
+
+.circle:hover {
+  background: white;
+  font-weight: bold;
+  color: rgba(33, 80, 255, 1);
+  box-shadow: 0px 0 25px 0 rgba(255, 255, 255, 1);
+}
+
+@media (max-width: 1366px) {
+  .date {
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    font-size: 80px;
+  }
+
+  .circle {
+    background: white;
+    font-weight: bold;
+    color: rgba(33, 80, 255, 1);
+    box-shadow: 0px 0 25px 0 rgba(255, 255, 255, 1);
+  }
+
+  .article h1 {
+    font-size: 80px;
+    font-weight: 600;
+  }
+
+  .article {
+    padding-top: 37vh;
+  }
+
+  
+.content {
+  height: calc(100% - 4 * var(--content-section-side-margins));
+  width: calc(100% - 4 * var(--content-section-side-margins));
+  border-radius: var(--content-section-border-radius);
+  background: var(--content-pane-background-after);
+  border: 1px solid rgba(255, 255, 255, 0.719);
+}
+.content:hover {
+  border: 1px solid rgba(255, 255, 255, 0.719);
+  /*background: var(--content-pane-background-after);*/
+}
+
+}
