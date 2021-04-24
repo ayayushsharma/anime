@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": { 
+            "@themes/*": [
+                "./src/themes/*"
+            ],
+            "@scripts/*": [
+                "./src/scripts/*"
+            ],
+            "@assets/*": [
+                "./assets/*"
+            ],
+            "@Browse/*": [
+                "./src/screens/Browse/*"
+            ],
+            "@Home/*": [
+                "./src/screens/Home/*"
+            ],
+            "@Stats/*": [
+                "./src/screens/Stats/*"
+            ]
+        }
+    }
+}

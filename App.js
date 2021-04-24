@@ -7,86 +7,53 @@
  */
 
 import React from 'react';
-import type {Node} from 'react';
 import {
   SafeAreaView,
   ScrollView,
   StatusBar,
   StyleSheet,
   Text,
-  useColorScheme,
   View,
 } from 'react-native';
+import { NativeRouter, Route, Link } from "react-router-native";
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+//Importing the
+import Test from './src/test/Test';
 
-const Section = ({children, title}): Node => {
-  const isDarkMode = useColorScheme() === 'dark';
+const App = () => {
   return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-};
-
-const App: () => Node = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.js</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
+    <NativeRouter>
+      <View style={styles.container}>
+        <View style={styles.nav}>
+          <Link to="/h" underlayColor="#f0f4f7" style={styles.navItem}>
+            <Text>Home</Text>
+          </Link>
+          {/* <Link
+          to="/about"
+          underlayColor="#f0f4f7"
+          style={styles.navItem}
+        >
+          <Text>About</Text>
+        </Link>
+        <Link
+          to="/topics"
+          underlayColor="#f0f4f7"
+          style={styles.navItem}
+        >
+          <Text>Topics</Text>
+        </Link> */}
         </View>
-      </ScrollView>
-    </SafeAreaView>
+
+        <Route exact path="/" >
+          <Test></Test>
+        </Route>
+
+        <Route exact path="/h" >
+          <Test></Test>
+        </Route>
+
+      </View>
+    </NativeRouter>
   );
 };
 
@@ -105,7 +72,9 @@ const styles = StyleSheet.create({
     fontWeight: '400',
   },
   highlight: {
+    fontSize: 20,
     fontWeight: '700',
+    color: 'hsl(209, 51%, 32%);',
   },
 });
 
