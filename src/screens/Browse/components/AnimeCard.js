@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {
 	SafeAreaView,
 	ScrollView,
@@ -7,24 +7,21 @@ import {
 	Text,
 	useColorScheme,
 	View,
-} from 'react-native';
+	ViewBase,
+} from "react-native";
 
 class AnimeCard extends Component {
-	state = {
-
-	}
+	state = {};
 
 	render() {
-		render (
+		render(
 			<View>
-				This is the Anime Card
-			</View>
+				<ViewBase></ViewBase>
+			</View>,
 		);
 	}
 
-	styles = StyleSheet.create({
-
-	});
+	styles = StyleSheet.create({});
 }
 
 export default AnimeCard;
