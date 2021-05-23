@@ -1,12 +1,18 @@
 # Anime
 
-[![Generic badge](https://img.shields.io/badge/Being%20built%20with-React--Native-blue)](https://reactnative.dev/)
+[![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev/)
+&nbsp;
+[![For Android](https://img.shields.io/badge/For_Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://www.android.com/)
+&nbsp;
+[![Jikan Api](https://img.shields.io/badge/Jikan_Api-2e51a2?style=for-the-badge&logo=data:image/png;base64,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&logoColor=white)](https://jikan.moe/)
+&nbsp;
 
-Aiming for a good MyAnimeList alternative with a cleaner design and ad free experince. 
 
-# App Features
+Aiming for a good MyAnimeList alternative with a cleaner design and ad free experience. 
 
-- Syncronize with MyAnimeList
+## App Features
+
+- Synchronize with MyAnimeList
 - Anime Search through filters
 - Looking Up Anime songs on Streaming Platforms
 - Finding Anime Discussion Pages on reddit

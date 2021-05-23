@@ -1,11 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import React from "react";
 import { SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, View } from "react-native";
 import { NativeRouter, Route, Link } from "react-router-native";
@@ -18,6 +10,8 @@ import Test from "./src/test/Test";
 // Welcome Page - The Very First Page When You Open the App for the first time or when you need to relogin.
 import Welcome from "./src/screens/Welcome/Welcome";
 
+import Browse from "./src/screens/Browse/Browse";
+
 const App = () => {
 	return (
 		<NativeRouter>
@@ -25,8 +19,14 @@ const App = () => {
 				<Welcome />
 			</Route>
 
+			<Route exact path="/Browse">
+				<Browse />
+			</Route>
+
 			<Route path="/h">
-				<Text>Lmah hugiwfiwyfywgfyu</Text>
+				<Link to="/Browse">
+					<Text>Login / Sign Up</Text>
+				</Link>
 			</Route>
 		</NativeRouter>
 	);

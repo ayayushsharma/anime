@@ -12,5 +12,7 @@ html {
     background-color: #357DED;
     background-color: #357DED;
     background-color: #357DED;
-    background-color: #357DED;
+    background-color: rgba(0, 122, 255, 1);
+    background-color: rgb(0, 233, 97);
+    background-color: hsl(330, 100%, 51%);
 }
