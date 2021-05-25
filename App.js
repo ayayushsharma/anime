@@ -5,8 +5,6 @@ import { NativeRouter, Route, Link } from "react-router-native";
 /**----------------------------------------------------------------
  * Importing the Modules
  ----------------------------------------------------------------*/
-import Test from "./src/test/Test";
-
 // Welcome Page - The Very First Page When You Open the App for the first time or when you need to relogin.
 import Welcome from "./src/screens/Welcome/Welcome";
 

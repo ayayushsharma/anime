@@ -15,7 +15,6 @@ import { Link } from "react-router-native";
 
 // importing modules form absolute path
 import { theme } from "themes/theme.js";
-import Test from "src/test/Test";
 const appDetails = require("root/app.json");
 
 class Welcome extends Component {
