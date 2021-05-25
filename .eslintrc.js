@@ -1,8 +1,38 @@
 module.exports = {
-  root: true,
-  extends: '@react-native-community',
-  // rules: {
-  //   'prettier/prettier': 0,
-  // },
-  inlinestyle: true //this will be removed when after the testing period.
+    "env": {
+        "browser": false,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            "space"
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    }
 };

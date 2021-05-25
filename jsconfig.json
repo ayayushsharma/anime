@@ -1,25 +1,31 @@
 {
     "compilerOptions": {
         "baseUrl": ".",
-        "paths": { 
-            "@themes/*": [
+        "paths": {
+            "themes/*": [
                 "./src/themes/*"
             ],
-            "@scripts/*": [
+            "scripts/*": [
                 "./src/scripts/*"
             ],
-            "@assets/*": [
+            "assets/*": [
                 "./assets/*"
             ],
-            "@Browse/*": [
+            "Browse/*": [
                 "./src/screens/Browse/*"
             ],
-            "@Home/*": [
+            "Home/*": [
                 "./src/screens/Home/*"
             ],
-            "@Stats/*": [
+            "Stats/*": [
                 "./src/screens/Stats/*"
+            ],
+            "root/*": [
+                "./*"
             ]
         }
-    }
+    },
+    "exclude": [
+        "node_modules"
+    ],
 }

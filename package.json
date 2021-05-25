@@ -12,6 +12,7 @@
   "dependencies": {
     "react": "17.0.1",
     "react-native": "0.64.0",
+    "react-native-progress": "^4.1.2",
     "react-router-native": "^5.2.0"
   },
   "devDependencies": {
@@ -19,12 +20,17 @@
     "@babel/runtime": "7.13.10",
     "@react-native-community/eslint-config": "2.0.0",
     "babel-jest": "26.6.3",
+    "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "7.14.0",
+    "eslint-plugin-react": "^7.23.2",
     "jest": "26.6.3",
     "metro-react-native-babel-preset": "0.64.0",
     "react-test-renderer": "17.0.1"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!@ngrx|(?!deck.gl)|ng-dynamic)"
+    ]
   }
 }
