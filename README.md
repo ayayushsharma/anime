@@ -1,5 +1,7 @@
 # Anime
 
+[![build](https://img.shields.io/github/workflow/status/ayayushsharma/anime/Node.js%20CI?label=build&logo=github&style=for-the-badge)](https://github.com/ayayushsharma/anime/actions/workflows/node.js.yml)
+&nbsp;
 [![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev/)
 &nbsp;
 [![For Android](https://img.shields.io/badge/For_Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://www.android.com/)
