@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, View } from "react-native";
 import { NativeRouter, Route, Link } from "react-router-native";
 
@@ -12,25 +12,27 @@ import Welcome from "./src/screens/Welcome/Welcome";
 
 import Browse from "./src/screens/Browse/Browse";
 
-const App = () => {
-	return (
-		<NativeRouter>
-			<Route exact path="/">
-				<Welcome />
-			</Route>
+class App extends Component {
+	render() {
+		return (
+			<NativeRouter>
+				<Route exact path="/">
+					<Welcome />
+				</Route>
 
-			<Route exact path="/Browse">
-				<Browse />
-			</Route>
+				<Route exact path="/Browse">
+					<Browse />
+				</Route>
 
-			<Route path="/h">
-				<Link to="/Browse">
-					<Text>Login / Sign Up</Text>
-				</Link>
-			</Route>
-		</NativeRouter>
-	);
-};
+				<Route path="/h">
+					<Link to="/Browse">
+						<Text>Login / Sign Up</Text>
+					</Link>
+				</Route>
+			</NativeRouter>
+		);
+	}
+}
 
 const styles = StyleSheet.create({
 	sectionContainer: {
