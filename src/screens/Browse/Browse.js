@@ -46,14 +46,54 @@ class Browse extends Component {
 			seenEpisodes: 5,
 			rating: 4,
 			nextEpisode: 6,
-			id: "kd",
-		}
+			id: Math.random(),
+			img: `http://unsplash.it/100/150`,
+		},
+		{
+			name: "props.name",
+			date: "props.date",
+			totalEpisodes: 9,
+			seenEpisodes: 5,
+			rating: 4,
+			nextEpisode: 6,
+			id: Math.random(),
+			img: `http://unsplash.it/100/160`,
+		},
+		{
+			name: "props.name",
+			date: "props.date",
+			totalEpisodes: 9,
+			seenEpisodes: 5,
+			rating: 4,
+			nextEpisode: 6,
+			id: Math.random(),
+			img: `http://unsplash.it/100/150`,
+		},
+		{
+			name: "props.name",
+			date: "props.date",
+			totalEpisodes: 9,
+			seenEpisodes: 5,
+			rating: 4,
+			nextEpisode: 6,
+			id: Math.random(),
+			img: `http://unsplash.it/100/150`,
+		},
+		{
+			name: "props.name",
+			date: "props.date",
+			totalEpisodes: 9,
+			seenEpisodes: 5,
+			rating: 4,
+			nextEpisode: 6,
+			id: Math.random(),
+			img: `http://unsplash.it/100/150`,
+		},
 	];
 
 	render() {
 		return (
 			<View style={this.styles.scrollView}>
-				<StatusBar animated={true} backgroundColor={theme.background_dark} />
 				<FlatList
 					data={this.data}
 					renderItem={({ item }) => (
@@ -64,6 +104,7 @@ class Browse extends Component {
 							seenEpisodes={item.seenEpisodes}
 							rating={item.rating}
 							nextEpisode={item.nextEpisode}
+							img={item.img}
 						/>
 					)}
 					keyExtractor={item => item.id}
@@ -79,7 +120,6 @@ class Browse extends Component {
 		scrollView: {
 			backgroundColor: theme.background_dark,
 			paddingTop: 5,
-			paddingBottom: 5,
 		},
 	});
 }

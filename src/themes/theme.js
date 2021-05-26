@@ -21,4 +21,19 @@ export const theme = {
 			low: "hsl(330, 100%, 51%)",
 		},
 	},
+	BottomNav: {
+		background: "hsl(212, 87%, 12%)",
+		text: {
+			color: "rgba(255,255,255,0.9)",
+			fontSize: 13,
+		},
+	},
+	TopBar: {
+		background: "hsl(212, 87%, 9%)",
+		text: {
+			color: "rgba(255,255,255,1)",
+			fontSize: 20,
+            fontFamily:""
+		},
+	},
 };
