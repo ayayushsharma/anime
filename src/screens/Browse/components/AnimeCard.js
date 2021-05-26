@@ -54,7 +54,7 @@ const nextEpisodeDisplay = data => {
 	return "flex";
 };
 
-const AnimeCard = ({ name, date, totalEpisodes, seenEpisodes, rating, nextEpisode }) => {
+const AnimeCard = ({ name, date, totalEpisodes, seenEpisodes, rating, nextEpisode, img }) => {
 	/**
 	 * The Background StyleSheet for manipulating styles of certain elements
 	 */
@@ -76,7 +76,7 @@ const AnimeCard = ({ name, date, totalEpisodes, seenEpisodes, rating, nextEpisod
 				 * This is the Image section. This will carry the cover art of the anime/manga
 				 */}
 				<View style={styles.coverArtView}>
-					<Image source={require("./assets/bg.jpg")} style={styles.coverArt} />
+					<Image source={{uri: img}} style={styles.coverArt} />
 				</View>
 
 				{/**
